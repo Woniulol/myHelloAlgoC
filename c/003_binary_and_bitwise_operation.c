@@ -24,7 +24,7 @@ void printBinary(int num)
     {
         printf("%s", (num & (1 << i)) == 0 ? "0" : "1");
         /**
-         * This condition check must be checked against 0, raher than 1,
+         * This condition check must be checked against 0, rather than 1,
          * because the & result is 2**n, which is not 1.
          */
         printf("%s", ((i % 4) == 0 && (i != 0)) ? "_" : "");
@@ -44,6 +44,7 @@ int main(void)
 
     /**
      * C does not have >>>.
+     * 
      * >> behavior is different for positive and negative int.
      */
 
